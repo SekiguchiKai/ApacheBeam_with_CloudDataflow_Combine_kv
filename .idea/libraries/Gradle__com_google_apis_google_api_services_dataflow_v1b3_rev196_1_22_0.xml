@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.apis:google-api-services-dataflow:v1b3-rev196-1.22.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.apis/google-api-services-dataflow/v1b3-rev196-1.22.0/1f4fb4200d88b9bcc3474fa8e41a1143186e67dc/google-api-services-dataflow-v1b3-rev196-1.22.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.apis/google-api-services-dataflow/v1b3-rev196-1.22.0/3bcc3cff656adb9531884f345f6c78ab4750ed1f/google-api-services-dataflow-v1b3-rev196-1.22.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

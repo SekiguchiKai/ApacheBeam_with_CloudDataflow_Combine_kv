@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.cloud.dataflow:google-cloud-dataflow-java-sdk-all:2.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.dataflow/google-cloud-dataflow-java-sdk-all/2.0.0/ce7852f147966efd0e3e226e08484bb2b69613d1/google-cloud-dataflow-java-sdk-all-2.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.dataflow/google-cloud-dataflow-java-sdk-all/2.0.0/a3836c31bcd9242efebbf0f4f6a42660629dff/google-cloud-dataflow-java-sdk-all-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

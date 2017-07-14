@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.beam:beam-sdks-java-extensions-protobuf:2.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.beam/beam-sdks-java-extensions-protobuf/2.0.0/a250f193cbb1aa943c8dbaa3b8e6ec3d6428de33/beam-sdks-java-extensions-protobuf-2.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.beam/beam-sdks-java-extensions-protobuf/2.0.0/f5fdd2458399b516bcfe3295ed3b93293c419f58/beam-sdks-java-extensions-protobuf-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
