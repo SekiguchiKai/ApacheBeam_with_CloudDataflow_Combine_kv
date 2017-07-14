@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36bd8a61-f477-40f9-a66c-263a651b5154" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/combine_result/result.csv-00000-of-00003" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/combine_result/result.csv-00001-of-00003" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/combine_result/result.csv-00002-of-00003" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/groupbykey_result/result.csv-00000-of-00003" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/groupbykey_result/result.csv-00001-of-00003" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/groupbykey_result/result.csv-00002-of-00003" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" />
     </list>
     <ignored path="ApacheBeam_with_CloudDataflow_Combine_kv.iws" />
@@ -50,10 +43,11 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+            <state relative-caret-position="136">
+              <caret line="81" column="60" selection-start-line="81" selection-start-column="60" selection-end-line="81" selection-end-column="60" />
               <folding>
-                <element signature="e#2596#2604#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2657#2665#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1040,10 +1034,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        <state relative-caret-position="136">
+          <caret line="81" column="60" selection-start-line="81" selection-start-column="60" selection-end-line="81" selection-end-column="60" />
           <folding>
-            <element signature="e#2596#2604#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2657#2665#0" expanded="true" />
           </folding>
         </state>
       </provider>

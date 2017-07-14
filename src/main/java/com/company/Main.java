@@ -79,6 +79,7 @@ public class Main {
         //　与えられたString str, String numを","で分割し、numをInteger型に変更して、KV<String, Integer>型にする
         PCollection<KV<String, Integer>> kvCounter = lines.apply(ParDo.of(new SplitWordsAndMakeKVFn()));
 
+        // Combine PerKey は、オペレーションの一部として GroupByKey 変換を実行する
         PCollection<KV<String, Integer>> sumPerKey = kvCounter
                 .apply(Sum.<String>integersPerKey());
 
