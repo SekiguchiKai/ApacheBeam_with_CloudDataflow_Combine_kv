@@ -5,7 +5,6 @@ import org.apache.beam.sdk.io.TextIO;
 import org.apache.beam.sdk.options.PipelineOptions;
 import org.apache.beam.sdk.options.PipelineOptionsFactory;
 import org.apache.beam.sdk.transforms.DoFn;
-import org.apache.beam.sdk.transforms.GroupByKey;
 import org.apache.beam.sdk.transforms.ParDo;
 import org.apache.beam.sdk.transforms.Sum;
 import org.apache.beam.sdk.values.KV;
@@ -33,18 +32,6 @@ public class Main {
         }
     }
 
-    /**
-     * 関数オブジェクト
-     * KV<String, Iterable<Integer>型をString型に変更する
-     */
-    static class TransTypeFromKVIterableAndMakeStringFn extends DoFn<KV<String, Iterable<Integer>>, String> {
-        @ProcessElement
-        public void processElement(ProcessContext c) {
-            // inputをString型に変換する
-            c.output(String.valueOf(c.element()));
-
-        }
-    }
 
     /**
      * 関数オブジェクト
@@ -68,8 +55,6 @@ public class Main {
     /**
      * アウトデータのパス
      */
-    private static final String GROUPBYKEY_OUTPUT_FILE_PATH = "./src/main/resources/groupbykey_result/result.csv";
-
     private static final String COMBINE_OUTPUT_FILE_PATH = "./src/main/resources/combine_result/result.csv";
 
     /**
@@ -94,18 +79,8 @@ public class Main {
         //　与えられたString str, String numを","で分割し、numをInteger型に変更して、KV<String, Integer>型にする
         PCollection<KV<String, Integer>> kvCounter = lines.apply(ParDo.of(new SplitWordsAndMakeKVFn()));
 
-        // GroupByKeyで、{Go, [2, 9, 1, 5]}のような形にする
-        // GroupByKey.<K, V>create())でGroupByKey<K, V>を生成している
-        PCollection<KV<String, Iterable<Integer>>> groupedWords = kvCounter.apply(
-                GroupByKey.<String, Integer>create());
-
         PCollection<KV<String, Integer>> sumPerKey = kvCounter
                 .apply(Sum.<String>integersPerKey());
-
-
-        // 出力のため、<KV<String, Iterable<Integer>>>型からString型に変換している
-        PCollection<String> groupedOutput = groupedWords.apply(ParDo.of(new TransTypeFromKVIterableAndMakeStringFn()));
-        groupedOutput.apply(TextIO.write().to(GROUPBYKEY_OUTPUT_FILE_PATH));
 
         PCollection<String> output = sumPerKey.apply(ParDo.of(new TransTypeFromKVAndMakeStringFn()));
         // 書き込む
